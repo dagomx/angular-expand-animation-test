@@ -1,0 +1,32 @@
+.search-options {
+  background-color: red;
+  opacity: 0;
+  width: 0px;
+  height: 36px;
+  overflow: hidden;
+  padding: 9px 0;
+  line-height: 36px;
+}
+
+.animate-visible {
+  display: block;
+  animation: test-visible 0.25s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.animate-hidden {
+  animation: test-hidden 0.25s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes test-visible {
+  0% { opacity: 0; width: 0px}
+  50% { opacity: 0.5; }
+  100% { opacity: 1; width: 300px; padding: 9px; }
+}
+
+@keyframes test-hidden {
+  0% { opacity: 1; width: 300px; padding: 9px; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; width: 0px; display: none;}
+}

@@ -1,0 +1,12 @@
+
+<button class="search-button" (click)="isSearchVisible = true">
+  Search
+</button>
+<div
+  class="search-options"
+  [ngClass]="{'animate-visible': isSearchVisible, 'animate-hidden': !isSearchVisible}">
+  
+    These are the search options.
+    <button (click)="isSearchVisible = false">Clear</button>
+
+</div>
