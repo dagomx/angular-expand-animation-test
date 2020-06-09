@@ -20,13 +20,13 @@
 }
 
 @keyframes test-visible {
-  0% { opacity: 0; width: 0px}
+  0% { opacity: 0; width: 0px; padding: 0; }
   50% { opacity: 0.5; }
   100% { opacity: 1; width: 300px; padding: 9px; }
 }
 
 @keyframes test-hidden {
-  0% { opacity: 1; width: 300px; padding: 9px; }
+  0% { opacity: 1; width: 300px; padding: 9px; height: 36px;}
   50% { opacity: 0.5; }
-  100% { opacity: 0; width: 0px; display: none;}
+  100% { opacity: 0; width: 0px; padding: 0; height: 0; }
 }
